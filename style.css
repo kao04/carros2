@@ -1,0 +1,102 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+
+    --orange: #E28625;
+    --green: #006971;
+    --dark-green: #004140;
+    --off-white: #F2F2F2;
+    --white: #FFF;
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--off-white);
+}
+
+h2 {
+    margin-block: 3rem;
+    font-size: 4rem;
+    font-family: "Big Shoulders Display";
+    text-transform: uppercase;
+    color: var(--off-white);
+}
+
+p {
+    font-family: "Lexend Deca";
+    color: var(--white);
+    font-size: 1.5rem;
+    opacity: 70%; 
+    line-height: 2.5rem;
+    margin-bottom: 8.2rem;
+}
+
+a{
+    font-family: "Lexend Deca";
+    display: block;
+    border: 2px solid var(--off-white);
+    background: var(--off-white);
+    padding: 1.2rem 4.2rem;
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    border-radius: 2.5rem;
+    text-decoration: none;
+}
+
+.sedans {
+    background-color: var(--orange);
+    border-radius: 1.8rem 0rem 0rem  1.8rem;
+}
+
+.suvs {
+    background-color: var(--green);
+}
+
+.luxury {
+    background-color: var(--dark-green);
+    border-radius: 0 1.8rem 1.8rem 0;
+}
+
+.sedans > a {
+    color: var(--orange);
+}
+
+.suvs > a {
+    color: var(--green);
+}
+
+.luxury > a {
+    color: var(--dark-green);  
+}
+main {
+    display: flex;
+    width: 92rem;
+}
+
+.sedans > a:hover{
+    background: var(--orange);
+    color: var(--off-white);
+}
+
+.suvs > a:hover{
+    background: var(--green);
+    color: var(--off-white);
+}
+
+.luxury > a:hover{
+    background: var(--dark-green);  
+    color: var(--off-white);
+}
+
+section{
+    padding: 4.8rem;
+}
